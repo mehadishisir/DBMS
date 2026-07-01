@@ -85,3 +85,8 @@ select * from students where age between 21 and 24  and course in ('CSE' ,'EEE')
 select * from students where first_name like 'S%';
 select * from students where email like '%gmail.com';
 select * from students where first_name ilike '%im%';
+
+-- not 
+select * from students where first_name not ilike '%im%';
+-- scaler
+select upper(concat (first_name, ' ', last_name)) as full_name from students
