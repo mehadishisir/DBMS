@@ -63,3 +63,10 @@ select * from students order by age desc
 
 select students_id as "id" from students
 
+
+-- distinct
+select distinct course from students
+
+-- where
+select  first_name,blood_group,course from students where course = 'CSE';
+
