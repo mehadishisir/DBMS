@@ -69,4 +69,15 @@ select distinct course from students
 
 -- where
 select  first_name,blood_group,course from students where course = 'CSE';
+-- aand or
+select * from students where course = 'CSE' and age = '21'
+select * from students where course = 'CSE' or course = 'BBA'
+select * from students where course = 'CSE' and (age = 22 or blood_group = 'O+')
+
+-- between and in
+
+select * from students where age between 20 and 23
+select * from students where grade in ( 'A' , 'A+')
+select * from students where students_id in (2,5,10,15)
+select * from students where age between 21 and 24  and course in ('CSE' ,'EEE')
 
