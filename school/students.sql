@@ -56,3 +56,10 @@ VALUES
 -- select some data from table
 select email,dob from students
 
+-- sorting 
+select * from students order by age desc
+
+-- alias
+
+select students_id as "id" from students
+
