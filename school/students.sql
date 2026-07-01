@@ -90,3 +90,7 @@ select * from students where first_name ilike '%im%';
 select * from students where first_name not ilike '%im%';
 -- scaler
 select upper(concat (first_name, ' ', last_name)) as full_name from students
+SELECT 
+    UPPER(CONCAT(first_name, ' ', last_name)) AS full_name,
+    LENGTH(CONCAT(first_name, ' ', last_name)) AS name_length
+FROM students;
