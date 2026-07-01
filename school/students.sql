@@ -80,4 +80,8 @@ select * from students where age between 20 and 23
 select * from students where grade in ( 'A' , 'A+')
 select * from students where students_id in (2,5,10,15)
 select * from students where age between 21 and 24  and course in ('CSE' ,'EEE')
+-- like vs ilike
 
+select * from students where first_name like 'S%';
+select * from students where email like '%gmail.com';
+select * from students where first_name ilike '%im%';
