@@ -94,3 +94,12 @@ SELECT
     UPPER(CONCAT(first_name, ' ', last_name)) AS full_name,
     LENGTH(CONCAT(first_name, ' ', last_name)) AS name_length
 FROM students;
+-- agrigate function
+-- null cualesce
+select first_name, coalesce( age, 0) from students
+SELECT
+    first_name,
+    COALESCE(age, 0) AS age,
+    COALESCE(course, 'Not Assigned') AS course,
+    COALESCE(email, 'No Email') AS email
+FROM students;
