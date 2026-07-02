@@ -103,3 +103,12 @@ SELECT
     COALESCE(course, 'Not Assigned') AS course,
     COALESCE(email, 'No Email') AS email
 FROM students;
+-- limit
+
+select * from students limit 10
+select * from students order by age desc nulls last limit 3
+SELECT *
+FROM students
+ORDER BY students_id
+LIMIT 6
+OFFSET 18;
