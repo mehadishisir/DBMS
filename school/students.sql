@@ -117,3 +117,13 @@ OFFSET 18;
 update students set age = 30 where students_id = 1 returning *
 -- delete
 delete from students where age is null returning *
+
+-- -- group students by grade
+-- select grade,count(*) from students group by grade;
+
+-- avg age by course
+
+-- select course,avg(age) from students group by course
+
+-- avg age student for course grade
+select course,grade ,count(*) from students group by course,grade
