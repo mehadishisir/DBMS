@@ -112,3 +112,8 @@ FROM students
 ORDER BY students_id
 LIMIT 6
 OFFSET 18;
+-- update
+
+update students set age = 30 where students_id = 1 returning *
+-- delete
+delete from students where age is null returning *
